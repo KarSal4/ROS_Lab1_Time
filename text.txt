@@ -1,0 +1,581 @@
+sau@sau-MS-7788:~$ mkdir -p ~/catkin_ws/src
+sau@sau-MS-7788:~$ cd ~/catkin_ws
+sau@sau-MS-7788:~/catkin_ws$ catkin_make
+Base path: /home/sau/catkin_ws
+Source space: /home/sau/catkin_ws/src
+Build space: /home/sau/catkin_ws/build
+Devel space: /home/sau/catkin_ws/devel
+Install space: /home/sau/catkin_ws/install
+Creating symlink "/home/sau/catkin_ws/src/CMakeLists.txt" pointing to "/opt/ros/noetic/share/catkin/cmake/toplevel.cmake"
+####
+#### Running command: "cmake /home/sau/catkin_ws/src -DCATKIN_DEVEL_PREFIX=/home/sau/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/sau/catkin_ws/install -G Unix Makefiles" in "/home/sau/catkin_ws/build"
+####
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/sau/catkin_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Found PY_em: /usr/lib/python3/dist-packages/em.py  
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/sau/catkin_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sau/catkin_ws/build
+####
+#### Running command: "make -j4 -l4" in "/home/sau/catkin_ws/build"
+####
+sau@sau-MS-7788:~/catkin_ws$ source ~/catkin_ws/devel/setup.bash
+sau@sau-MS-7788:~/catkin_ws$ echo $ROS_PACKAGE_PATH
+/home/sau/catkin_ws/src:/opt/ros/noetic/share
+sau@sau-MS-7788:~/catkin_ws$ cd ~/catkin_ws/src
+sau@sau-MS-7788:~/catkin_ws/src$ catkin_create_pkg NK_pkg rospy
+WARNING: Package name "NK_pkg" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+Created file NK_pkg/package.xml
+Created file NK_pkg/CMakeLists.txt
+Created folder NK_pkg/src
+Successfully created files in /home/sau/catkin_ws/src/NK_pkg. Please adjust the values in package.xml.
+sau@sau-MS-7788:~/catkin_ws/src$ cd ~/catkin_ws
+sau@sau-MS-7788:~/catkin_ws$ catkin_make
+Base path: /home/sau/catkin_ws
+Source space: /home/sau/catkin_ws/src
+Build space: /home/sau/catkin_ws/build
+Devel space: /home/sau/catkin_ws/devel
+Install space: /home/sau/catkin_ws/install
+WARNING: Package name "NK_pkg" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+####
+#### Running command: "cmake /home/sau/catkin_ws/src -DCATKIN_DEVEL_PREFIX=/home/sau/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/sau/catkin_ws/install -G Unix Makefiles" in "/home/sau/catkin_ws/build"
+####
+-- Using CATKIN_DEVEL_PREFIX: /home/sau/catkin_ws/devel
+-- Using CMAKE_PREFIX_PATH: /home/sau/catkin_ws/devel;/opt/ros/noetic
+-- This workspace overlays: /home/sau/catkin_ws/devel;/opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/sau/catkin_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+WARNING: Package name "NK_pkg" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "NK_pkg" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - NK_pkg
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'NK_pkg'
+-- ==> add_subdirectory(NK_pkg)
+WARNING: Package name "NK_pkg" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sau/catkin_ws/build
+####
+#### Running command: "make -j4 -l4" in "/home/sau/catkin_ws/build"
+####
+sau@sau-MS-7788:~/catkin_ws$ rospack list
+NK_pkg /home/sau/catkin_ws/src/NK_pkg
+actionlib /opt/ros/noetic/share/actionlib
+actionlib_msgs /opt/ros/noetic/share/actionlib_msgs
+actionlib_tutorials /opt/ros/noetic/share/actionlib_tutorials
+angles /opt/ros/noetic/share/angles
+apriltag_ros /opt/ros/noetic/share/apriltag_ros
+base_local_planner /opt/ros/noetic/share/base_local_planner
+bond /opt/ros/noetic/share/bond
+bondcpp /opt/ros/noetic/share/bondcpp
+bondpy /opt/ros/noetic/share/bondpy
+camera_calibration /opt/ros/noetic/share/camera_calibration
+camera_calibration_parsers /opt/ros/noetic/share/camera_calibration_parsers
+camera_info_manager /opt/ros/noetic/share/camera_info_manager
+catkin /opt/ros/noetic/share/catkin
+class_loader /opt/ros/noetic/share/class_loader
+clear_costmap_recovery /opt/ros/noetic/share/clear_costmap_recovery
+cmake_modules /opt/ros/noetic/share/cmake_modules
+compressed_depth_image_transport /opt/ros/noetic/share/compressed_depth_image_transport
+compressed_image_transport /opt/ros/noetic/share/compressed_image_transport
+control_msgs /opt/ros/noetic/share/control_msgs
+control_toolbox /opt/ros/noetic/share/control_toolbox
+controller_interface /opt/ros/noetic/share/controller_interface
+controller_manager /opt/ros/noetic/share/controller_manager
+controller_manager_msgs /opt/ros/noetic/share/controller_manager_msgs
+costmap_2d /opt/ros/noetic/share/costmap_2d
+costmap_converter /opt/ros/noetic/share/costmap_converter
+cpp_common /opt/ros/noetic/share/cpp_common
+cv_bridge /opt/ros/noetic/share/cv_bridge
+depth_image_proc /opt/ros/noetic/share/depth_image_proc
+diagnostic_aggregator /opt/ros/noetic/share/diagnostic_aggregator
+diagnostic_analysis /opt/ros/noetic/share/diagnostic_analysis
+diagnostic_common_diagnostics /opt/ros/noetic/share/diagnostic_common_diagnostics
+diagnostic_msgs /opt/ros/noetic/share/diagnostic_msgs
+diagnostic_updater /opt/ros/noetic/share/diagnostic_updater
+diff_drive_controller /opt/ros/noetic/share/diff_drive_controller
+dynamic_reconfigure /opt/ros/noetic/share/dynamic_reconfigure
+eigen_conversions /opt/ros/noetic/share/eigen_conversions
+filters /opt/ros/noetic/share/filters
+find_object_2d /opt/ros/noetic/share/find_object_2d
+forward_command_controller /opt/ros/noetic/share/forward_command_controller
+gazebo_dev /opt/ros/noetic/share/gazebo_dev
+gazebo_msgs /opt/ros/noetic/share/gazebo_msgs
+gazebo_plugins /opt/ros/noetic/share/gazebo_plugins
+gazebo_ros /opt/ros/noetic/share/gazebo_ros
+gazebo_ros_control /opt/ros/noetic/share/gazebo_ros_control
+gencpp /opt/ros/noetic/share/gencpp
+geneus /opt/ros/noetic/share/geneus
+genlisp /opt/ros/noetic/share/genlisp
+genmsg /opt/ros/noetic/share/genmsg
+gennodejs /opt/ros/noetic/share/gennodejs
+genpy /opt/ros/noetic/share/genpy
+geographic_msgs /opt/ros/noetic/share/geographic_msgs
+geometry_msgs /opt/ros/noetic/share/geometry_msgs
+gl_dependency /opt/ros/noetic/share/gl_dependency
+global_planner /opt/ros/noetic/share/global_planner
+hardware_interface /opt/ros/noetic/share/hardware_interface
+hector_gazebo_plugins /opt/ros/noetic/share/hector_gazebo_plugins
+image_geometry /opt/ros/noetic/share/image_geometry
+image_proc /opt/ros/noetic/share/image_proc
+image_publisher /opt/ros/noetic/share/image_publisher
+image_rotate /opt/ros/noetic/share/image_rotate
+image_transport /opt/ros/noetic/share/image_transport
+image_view /opt/ros/noetic/share/image_view
+imu_filter_madgwick /opt/ros/noetic/share/imu_filter_madgwick
+interactive_marker_tutorials /opt/ros/noetic/share/interactive_marker_tutorials
+interactive_markers /opt/ros/noetic/share/interactive_markers
+joint_limits_interface /opt/ros/noetic/share/joint_limits_interface
+joint_state_controller /opt/ros/noetic/share/joint_state_controller
+joint_state_publisher /opt/ros/noetic/share/joint_state_publisher
+joint_state_publisher_gui /opt/ros/noetic/share/joint_state_publisher_gui
+joy /opt/ros/noetic/share/joy
+kdl_conversions /opt/ros/noetic/share/kdl_conversions
+kdl_parser /opt/ros/noetic/share/kdl_parser
+laser_assembler /opt/ros/noetic/share/laser_assembler
+laser_filters /opt/ros/noetic/share/laser_filters
+laser_geometry /opt/ros/noetic/share/laser_geometry
+libg2o /opt/ros/noetic/share/libg2o
+libnabo /opt/ros/noetic/share/libnabo
+libpointmatcher /opt/ros/noetic/share/libpointmatcher
+librviz_tutorial /opt/ros/noetic/share/librviz_tutorial
+map_msgs /opt/ros/noetic/share/map_msgs
+mbf_abstract_core /opt/ros/noetic/share/mbf_abstract_core
+mbf_costmap_core /opt/ros/noetic/share/mbf_costmap_core
+mbf_msgs /opt/ros/noetic/share/mbf_msgs
+mbf_utility /opt/ros/noetic/share/mbf_utility
+media_export /opt/ros/noetic/share/media_export
+message_filters /opt/ros/noetic/share/message_filters
+message_generation /opt/ros/noetic/share/message_generation
+message_runtime /opt/ros/noetic/share/message_runtime
+mk /opt/ros/noetic/share/mk
+move_base /opt/ros/noetic/share/move_base
+move_base_msgs /opt/ros/noetic/share/move_base_msgs
+nav_core /opt/ros/noetic/share/nav_core
+nav_msgs /opt/ros/noetic/share/nav_msgs
+navfn /opt/ros/noetic/share/navfn
+nodelet /opt/ros/noetic/share/nodelet
+nodelet_topic_tools /opt/ros/noetic/share/nodelet_topic_tools
+nodelet_tutorial_math /opt/ros/noetic/share/nodelet_tutorial_math
+octomap /opt/ros/noetic/share/octomap
+octomap_msgs /opt/ros/noetic/share/octomap_msgs
+pcl_conversions /opt/ros/noetic/share/pcl_conversions
+pcl_msgs /opt/ros/noetic/share/pcl_msgs
+pcl_ros /opt/ros/noetic/share/pcl_ros
+pluginlib /opt/ros/noetic/share/pluginlib
+pluginlib_tutorials /opt/ros/noetic/share/pluginlib_tutorials
+polled_camera /opt/ros/noetic/share/polled_camera
+position_controllers /opt/ros/noetic/share/position_controllers
+python_qt_binding /opt/ros/noetic/share/python_qt_binding
+qt_dotgraph /opt/ros/noetic/share/qt_dotgraph
+qt_gui /opt/ros/noetic/share/qt_gui
+qt_gui_cpp /opt/ros/noetic/share/qt_gui_cpp
+qt_gui_py_common /opt/ros/noetic/share/qt_gui_py_common
+qwt_dependency /opt/ros/noetic/share/qwt_dependency
+realtime_tools /opt/ros/noetic/share/realtime_tools
+resource_retriever /opt/ros/noetic/share/resource_retriever
+robot_localization /opt/ros/noetic/share/robot_localization
+robot_state_publisher /opt/ros/noetic/share/robot_state_publisher
+ros_environment /opt/ros/noetic/share/ros_environment
+rosbag /opt/ros/noetic/share/rosbag
+rosbag_migration_rule /opt/ros/noetic/share/rosbag_migration_rule
+rosbag_storage /opt/ros/noetic/share/rosbag_storage
+rosbash /opt/ros/noetic/share/rosbash
+rosboost_cfg /opt/ros/noetic/share/rosboost_cfg
+rosbuild /opt/ros/noetic/share/rosbuild
+rosclean /opt/ros/noetic/share/rosclean
+rosconsole /opt/ros/noetic/share/rosconsole
+rosconsole_bridge /opt/ros/noetic/share/rosconsole_bridge
+roscpp /opt/ros/noetic/share/roscpp
+roscpp_serialization /opt/ros/noetic/share/roscpp_serialization
+roscpp_traits /opt/ros/noetic/share/roscpp_traits
+roscpp_tutorials /opt/ros/noetic/share/roscpp_tutorials
+roscreate /opt/ros/noetic/share/roscreate
+rosgraph /opt/ros/noetic/share/rosgraph
+rosgraph_msgs /opt/ros/noetic/share/rosgraph_msgs
+roslang /opt/ros/noetic/share/roslang
+roslaunch /opt/ros/noetic/share/roslaunch
+roslib /opt/ros/noetic/share/roslib
+roslint /opt/ros/noetic/share/roslint
+roslisp /opt/ros/noetic/share/roslisp
+roslz4 /opt/ros/noetic/share/roslz4
+rosmake /opt/ros/noetic/share/rosmake
+rosmaster /opt/ros/noetic/share/rosmaster
+rosmsg /opt/ros/noetic/share/rosmsg
+rosnode /opt/ros/noetic/share/rosnode
+rosout /opt/ros/noetic/share/rosout
+rospack /opt/ros/noetic/share/rospack
+rosparam /opt/ros/noetic/share/rosparam
+rospy /opt/ros/noetic/share/rospy
+rospy_tutorials /opt/ros/noetic/share/rospy_tutorials
+rosserial_client /opt/ros/noetic/share/rosserial_client
+rosserial_msgs /opt/ros/noetic/share/rosserial_msgs
+rosserial_server /opt/ros/noetic/share/rosserial_server
+rosservice /opt/ros/noetic/share/rosservice
+rostest /opt/ros/noetic/share/rostest
+rostime /opt/ros/noetic/share/rostime
+rostopic /opt/ros/noetic/share/rostopic
+rosunit /opt/ros/noetic/share/rosunit
+roswtf /opt/ros/noetic/share/roswtf
+rotate_recovery /opt/ros/noetic/share/rotate_recovery
+rqt_action /opt/ros/noetic/share/rqt_action
+rqt_bag /opt/ros/noetic/share/rqt_bag
+rqt_bag_plugins /opt/ros/noetic/share/rqt_bag_plugins
+rqt_console /opt/ros/noetic/share/rqt_console
+rqt_dep /opt/ros/noetic/share/rqt_dep
+rqt_graph /opt/ros/noetic/share/rqt_graph
+rqt_gui /opt/ros/noetic/share/rqt_gui
+rqt_gui_cpp /opt/ros/noetic/share/rqt_gui_cpp
+rqt_gui_py /opt/ros/noetic/share/rqt_gui_py
+rqt_image_view /opt/ros/noetic/share/rqt_image_view
+rqt_launch /opt/ros/noetic/share/rqt_launch
+rqt_logger_level /opt/ros/noetic/share/rqt_logger_level
+rqt_moveit /opt/ros/noetic/share/rqt_moveit
+rqt_msg /opt/ros/noetic/share/rqt_msg
+rqt_nav_view /opt/ros/noetic/share/rqt_nav_view
+rqt_plot /opt/ros/noetic/share/rqt_plot
+rqt_pose_view /opt/ros/noetic/share/rqt_pose_view
+rqt_publisher /opt/ros/noetic/share/rqt_publisher
+rqt_py_common /opt/ros/noetic/share/rqt_py_common
+rqt_py_console /opt/ros/noetic/share/rqt_py_console
+rqt_reconfigure /opt/ros/noetic/share/rqt_reconfigure
+rqt_robot_dashboard /opt/ros/noetic/share/rqt_robot_dashboard
+rqt_robot_monitor /opt/ros/noetic/share/rqt_robot_monitor
+rqt_robot_steering /opt/ros/noetic/share/rqt_robot_steering
+rqt_runtime_monitor /opt/ros/noetic/share/rqt_runtime_monitor
+rqt_rviz /opt/ros/noetic/share/rqt_rviz
+rqt_service_caller /opt/ros/noetic/share/rqt_service_caller
+rqt_shell /opt/ros/noetic/share/rqt_shell
+rqt_srv /opt/ros/noetic/share/rqt_srv
+rqt_tf_tree /opt/ros/noetic/share/rqt_tf_tree
+rqt_top /opt/ros/noetic/share/rqt_top
+rqt_topic /opt/ros/noetic/share/rqt_topic
+rqt_web /opt/ros/noetic/share/rqt_web
+rviz /opt/ros/noetic/share/rviz
+rviz_imu_plugin /opt/ros/noetic/share/rviz_imu_plugin
+rviz_plugin_tutorials /opt/ros/noetic/share/rviz_plugin_tutorials
+rviz_python_tutorial /opt/ros/noetic/share/rviz_python_tutorial
+self_test /opt/ros/noetic/share/self_test
+sensor_msgs /opt/ros/noetic/share/sensor_msgs
+shape_msgs /opt/ros/noetic/share/shape_msgs
+smach /opt/ros/noetic/share/smach
+smach_msgs /opt/ros/noetic/share/smach_msgs
+smach_ros /opt/ros/noetic/share/smach_ros
+smclib /opt/ros/noetic/share/smclib
+stage /opt/ros/noetic/share/stage
+stage_ros /opt/ros/noetic/share/stage_ros
+std_msgs /opt/ros/noetic/share/std_msgs
+std_srvs /opt/ros/noetic/share/std_srvs
+stereo_image_proc /opt/ros/noetic/share/stereo_image_proc
+stereo_msgs /opt/ros/noetic/share/stereo_msgs
+teb_local_planner /opt/ros/noetic/share/teb_local_planner
+tf /opt/ros/noetic/share/tf
+tf2 /opt/ros/noetic/share/tf2
+tf2_eigen /opt/ros/noetic/share/tf2_eigen
+tf2_geometry_msgs /opt/ros/noetic/share/tf2_geometry_msgs
+tf2_kdl /opt/ros/noetic/share/tf2_kdl
+tf2_msgs /opt/ros/noetic/share/tf2_msgs
+tf2_py /opt/ros/noetic/share/tf2_py
+tf2_ros /opt/ros/noetic/share/tf2_ros
+tf_conversions /opt/ros/noetic/share/tf_conversions
+theora_image_transport /opt/ros/noetic/share/theora_image_transport
+topic_tools /opt/ros/noetic/share/topic_tools
+trajectory_msgs /opt/ros/noetic/share/trajectory_msgs
+transmission_interface /opt/ros/noetic/share/transmission_interface
+turtle_actionlib /opt/ros/noetic/share/turtle_actionlib
+turtle_tf /opt/ros/noetic/share/turtle_tf
+turtle_tf2 /opt/ros/noetic/share/turtle_tf2
+turtlesim /opt/ros/noetic/share/turtlesim
+urdf /opt/ros/noetic/share/urdf
+urdf_parser_plugin /opt/ros/noetic/share/urdf_parser_plugin
+urdf_sim_tutorial /opt/ros/noetic/share/urdf_sim_tutorial
+urdf_tutorial /opt/ros/noetic/share/urdf_tutorial
+uuid_msgs /opt/ros/noetic/share/uuid_msgs
+visualization_marker_tutorials /opt/ros/noetic/share/visualization_marker_tutorials
+visualization_msgs /opt/ros/noetic/share/visualization_msgs
+voxel_grid /opt/ros/noetic/share/voxel_grid
+webkit_dependency /opt/ros/noetic/share/webkit_dependency
+xacro /opt/ros/noetic/share/xacro
+xmlrpcpp /opt/ros/noetic/share/xmlrpcpp
+sau@sau-MS-7788:~/catkin_ws$ roscd NK_pkg
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git init
+Initialized empty Git repository in /home/sau/catkin_ws/src/NK_pkg/.git/
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git checkout -b main
+Switched to a new branch 'main'
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	CMakeLists.txt
+	package.xml
+
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git remote add origin https://github.com/KarSal4/ROS_Lab.git
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git pull origin main
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 589 bytes | 589.00 KiB/s, done.
+From https://github.com/KarSal4/ROS_Lab
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git add -A
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git commit -am "First package commit"
+[main fad617a] First package commit
+ 2 files changed, 266 insertions(+)
+ create mode 100644 CMakeLists.txt
+ create mode 100644 package.xml
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git push --set-upstream origin main
+Username for 'https://github.com': KarSal4 
+Password for 'https://KarSal4@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/KarSal4/ROS_Lab.git/'
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git status
+On branch main
+nothing to commit, working tree clean
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git push --set-upstream origin main
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/KarSal4/ROS_Lab.git/'
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git push --set-upstream origin main
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/KarSal4/ROS_Lab.git/'
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git push --set-upstream origin main
+Username for 'https://github.com': ^C
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git remote add origin 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
+fatal: remote origin already exists.
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git push --set-upstream origin main
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/KarSal4/ROS_Lab.git/'
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git push --set-upstream origin main
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/KarSal4/ROS_Lab.git/'
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git push --set-upstream origin main
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 3.39 KiB | 3.39 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/KarSal4/ROS_Lab.git
+   70956ff..fad617a  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ roscd study_pkg
+roscd: No such package/stack 'study_pkg'
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ mkdir scripts
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ touch scripts/first_node.py
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ rosrun study_pkg first_node.py
+[rospack] Error: package 'study_pkg' not found
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ rosrun NK_pkg first_node.py
+[rosrun] Couldn't find executable named first_node.py below /home/sau/catkin_ws/src/NK_pkg
+[rosrun] Found the following, but they're either not files,
+[rosrun] or not executable:
+[rosrun]   /home/sau/catkin_ws/src/NK_pkg/scripts/first_node.py
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ chmod +x scripts/first_node.py
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ rosrun NK_pkg first_node.py
+Hello ROS World!
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git add scripts/first_node.py
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git commit -am "My first node in ROS, hooray!"
+[main 4d5f4e8] My first node in ROS, hooray!
+ 1 file changed, 8 insertions(+)
+ create mode 100755 scripts/first_node.py
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git push
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/KarSal4/ROS_Lab.git/'
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git push
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 419 bytes | 419.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KarSal4/ROS_Lab.git
+   fad617a..4d5f4e8  main -> main
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ cd catkin_ws
+bash: cd: catkin_ws: No such file or directory
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ cd ..
+sau@sau-MS-7788:~/catkin_ws/src$ catkin_create_pkg Time_pkg rospy
+WARNING: Package name "Time_pkg" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+Created file Time_pkg/package.xml
+Created file Time_pkg/CMakeLists.txt
+Created folder Time_pkg/src
+Successfully created files in /home/sau/catkin_ws/src/Time_pkg. Please adjust the values in package.xml.
+sau@sau-MS-7788:~/catkin_ws/src$ ^C
+sau@sau-MS-7788:~/catkin_ws/src$ catkin_create_pkg Time_pkg rospy
+WARNING: Package name "Time_pkg" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+Created file Time_pkg/package.xml
+Created file Time_pkg/CMakeLists.txt
+Created folder Time_pkg/src
+Successfully created files in /home/sau/catkin_ws/src/Time_pkg. Please adjust the values in package.xml.
+sau@sau-MS-7788:~/catkin_ws/src$ catkin_create_pkg Time_pkg rospy
+WARNING: Package name "Time_pkg" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+usage: catkin_create_pkg [-h] [--meta] [-s [SYS_DEPS [SYS_DEPS ...]]]
+                         [-b [BOOST_COMPS [BOOST_COMPS ...]]] [-V PKG_VERSION]
+                         [-D DESCRIPTION] [-l LICENSE] [-a AUTHOR] [-m MAINTAINER]
+                         [--rosdistro ROSDISTRO]
+                         name [dependencies [dependencies ...]]
+catkin_create_pkg: error: File exists: /home/sau/catkin_ws/src/Time_pkg/package.xml
+sau@sau-MS-7788:~/catkin_ws/src$ catkin_create_pkg super_time_study_pkg rospy
+Created file super_time_study_pkg/package.xml
+Created file super_time_study_pkg/CMakeLists.txt
+Created folder super_time_study_pkg/src
+Successfully created files in /home/sau/catkin_ws/src/super_time_study_pkg. Please adjust the values in package.xml.
+sau@sau-MS-7788:~/catkin_ws/src$ roscd super_time_study_pkg
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git init
+Initialized empty Git repository in /home/sau/catkin_ws/src/super_time_study_pkg/.git/
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git checkout -b main
+Switched to a new branch 'main'
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	CMakeLists.txt
+	package.xml
+
+nothing added to commit but untracked files present (use "git add" to track)
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git remote add origin [Repo URL]
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git remote add origin [Repo URL]
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git remote add origin https://github.com/KarSal4/ROS_Lab1_Time.git
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git pull origin main
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 592 bytes | 592.00 KiB/s, done.
+From https://github.com/KarSal4/ROS_Lab1_Time
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git add -A
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git commit -am "First package commit"
+[main 160c9ae] First package commit
+ 2 files changed, 266 insertions(+)
+ create mode 100644 CMakeLists.txt
+ create mode 100644 package.xml
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git push --set-upstream origin main
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 3.41 KiB | 3.41 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/KarSal4/ROS_Lab1_Time.git
+   7dce8b9..160c9ae  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ mkdir scripts
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ touch scripts/Time.py
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ chmod +x scripts/first_node.py
+chmod: cannot access 'scripts/first_node.py': No such file or directory
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ chmod +x scripts/Time.py
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ rosrun super_time_study_pkg Time.py
+2023-03-03 16:05:31.305635
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git add scripts/Time.py
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git commit -am "Time"
+[main 905a892] Time
+ 1 file changed, 7 insertions(+)
+ create mode 100755 scripts/Time.py
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git push
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 366 bytes | 366.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KarSal4/ROS_Lab1_Time.git
+   160c9ae..905a892  main -> main
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ ^C
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ 
+
