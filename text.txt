@@ -577,5 +577,181 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/KarSal4/ROS_Lab1_Time.git
    160c9ae..905a892  main -> main
 sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ ^C
-sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ 
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git commit -am "text"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git push
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+Everything up-to-date
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ ^C
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git add scripts/Time.py
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git add scripts/Time.py
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git add text.txt
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git commit -am "text"
+[main 02373d3] text
+ 1 file changed, 581 insertions(+)
+ create mode 100644 text.txt
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ git push
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 5.44 KiB | 5.44 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KarSal4/ROS_Lab1_Time.git
+   905a892..02373d3  main -> main
+sau@sau-MS-7788:~/catkin_ws/src/super_time_study_pkg$ cd ..
+sau@sau-MS-7788:~/catkin_ws/src$ mkdir Gotov
+sau@sau-MS-7788:~/catkin_ws/src$ git clone https://github.com/AleksDevEdu/ros_edu_super_secret_package.git
+Cloning into 'ros_edu_super_secret_package'...
+remote: Enumerating objects: 19, done.
+remote: Counting objects: 100% (19/19), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 19 (delta 5), reused 14 (delta 3), pack-reused 0
+Unpacking objects: 100% (19/19), 7.27 KiB | 1.82 MiB/s, done.
+sau@sau-MS-7788:~/catkin_ws/src$ cd ros_edu_super_secret_package
+sau@sau-MS-7788:~/catkin_ws/src/ros_edu_super_secret_package$ cd scripts
+sau@sau-MS-7788:~/catkin_ws/src/ros_edu_super_secret_package/scripts$ chmod +x hack_secret_data.py
+sau@sau-MS-7788:~/catkin_ws/src/ros_edu_super_secret_package/scripts$ rosrun ros_edu_super_secret_package hack_secret_data.py 
+Start hacking
+Grant access to super secret data storage
+......
+Failed
+ (╯°□°）╯︵ ┻━┻)
+Okay, try another way
+......
+Access granted
+┬─┬ノ( º _ ºノ)
+Copying super secret data
+......
+Data hacked and copied for 26.03 [sec], you are awesome!
+sau@sau-MS-7788:~/catkin_ws/src/ros_edu_super_secret_package/scripts$ rosrun b
+base_local_planner  bond                bondcpp             bondpy
+sau@sau-MS-7788:~/catkin_ws/src/ros_edu_super_secret_package/scripts$ rosrun r
+realtime_tools                rosmake                       rqt_image_view
+resource_retriever            rosmaster                     rqt_launch
+robot_localization            rosmsg                        rqt_logger_level
+robot_state_publisher         rosnode                       rqt_moveit
+rosbag                        rosout                        rqt_msg
+rosbag_migration_rule         rospack                       rqt_nav_view
+rosbag_storage                rosparam                      rqt_plot
+rosbash                       rospy                         rqt_pose_view
+rosboost_cfg                  rospy_tutorials               rqt_publisher
+rosbuild                      rosserial_client              rqt_py_common
+rosclean                      rosserial_msgs                rqt_py_console
+rosconsole                    rosserial_server              rqt_reconfigure
+rosconsole_bridge             rosservice                    rqt_robot_dashboard
+roscpp                        rostest                       rqt_robot_monitor
+roscpp_serialization          rostime                       rqt_robot_steering
+roscpp_traits                 rostopic                      rqt_runtime_monitor
+roscpp_tutorials              rosunit                       rqt_rviz
+roscreate                     roswtf                        rqt_service_caller
+ros_edu_super_secret_package  rotate_recovery               rqt_shell
+ros_environment               rqt_action                    rqt_srv
+rosgraph                      rqt_bag                       rqt_tf_tree
+rosgraph_msgs                 rqt_bag_plugins               rqt_top
+roslang                       rqt_console                   rqt_topic
+roslaunch                     rqt_dep                       rqt_web
+roslib                        rqt_graph                     rviz
+roslint                       rqt_gui                       rviz_imu_plugin
+roslisp                       rqt_gui_cpp                   rviz_plugin_tutorials
+roslz4                        rqt_gui_py                    rviz_python_tutorial
+sau@sau-MS-7788:~/catkin_ws/src/ros_edu_super_secret_package/scripts$ rosrun ros_edu_super_secret_package broken_script.py
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+^CTraceback (most recent call last):
+  File "/home/sau/catkin_ws/src/ros_edu_super_secret_package/scripts/broken_script.py", line 27, in <module>
+    main()
+  File "/home/sau/catkin_ws/src/ros_edu_super_secret_package/scripts/broken_script.py", line 23, in main
+    time.sleep(1)
+KeyboardInterrupt
+
+sau@sau-MS-7788:~/catkin_ws/src/ros_edu_super_secret_package/scripts$ git add -A
+sau@sau-MS-7788:~/catkin_ws/src/ros_edu_super_secret_package/scripts$ git commit -am "last"
+[main a01fbe7] last
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+sau@sau-MS-7788:~/catkin_ws/src/ros_edu_super_secret_package/scripts$ git push
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+remote: Permission to AleksDevEdu/ros_edu_super_secret_package.git denied to KarSal4.
+fatal: unable to access 'https://github.com/AleksDevEdu/ros_edu_super_secret_package.git/': The requested URL returned error: 403
+sau@sau-MS-7788:~/catkin_ws/src/ros_edu_super_secret_package/scripts$ cd ...
+bash: cd: ...: No such file or directory
+sau@sau-MS-7788:~/catkin_ws/src/ros_edu_super_secret_package/scripts$ cd ..
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg/ros_edu_super_secret_package$ cd ..
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git push
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+Everything up-to-date
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git add -A
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git commit -am "dfsd"
+[main 7ffea61] dfsd
+ 7 files changed, 504 insertions(+)
+ create mode 100644 ros_edu_super_secret_package/.gitignore
+ create mode 100644 ros_edu_super_secret_package/CMakeLists.txt
+ create mode 100644 ros_edu_super_secret_package/LICENSE
+ create mode 100644 ros_edu_super_secret_package/README.md
+ create mode 100644 ros_edu_super_secret_package/package.xml
+ create mode 100755 ros_edu_super_secret_package/scripts/broken_script.py
+ create mode 100755 ros_edu_super_secret_package/scripts/hack_secret_data.py
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git push
+Username for 'https://github.com': KarSal4
+Password for 'https://KarSal4@github.com': 
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 6.18 KiB | 3.09 MiB/s, done.
+Total 11 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KarSal4/ROS_Lab.git
+   4d5f4e8..7ffea61  main -> main
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ git log
+commit 7ffea614ad51eee9a14b723a8722cb5b60d030ba (HEAD -> main, origin/main)
+Author: Nastya <popo@mail.ru>
+Date:   Fri Mar 3 16:34:05 2023 +0300
+
+    dfsd
+
+commit 4d5f4e8e18a194721bde3d160fa17d76cc79b54a
+Author: Nastya <popo@mail.ru>
+Date:   Fri Mar 3 15:44:09 2023 +0300
+
+    My first node in ROS, hooray!
+
+commit fad617aca00de49413194dbf8a1b49ba6a5f3c50
+Author: Nastya <popo@mail.ru>
+Date:   Fri Mar 3 15:25:32 2023 +0300
+
+    First package commit
+
+commit 70956ffcf90ada6c0c53f48a0c4610026cd7658b
+Author: KarSal4 <116096231+KarSal4@users.noreply.github.com>
+Date:   Fri Mar 3 12:05:38 2023 +0300
+
+    Initial commit
+sau@sau-MS-7788:~/catkin_ws/src/NK_pkg$ 
+
 
